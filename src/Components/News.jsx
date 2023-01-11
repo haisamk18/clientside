@@ -6,7 +6,7 @@ import './News.css'
 
 const News = () => {
     const [value,setValue]=useState('')
-    const success=false;
+   
     console.log(value);
 
     const Searchm =() => {
@@ -35,7 +35,7 @@ const News = () => {
        
         
         {Newsdata.filter((e)=> {
-            if (value==''){
+            if (value===''){
                 return e
             }
             else if (e.news.includes(value) || e.title.includes(value)) {
